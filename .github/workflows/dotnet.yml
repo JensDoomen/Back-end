@@ -1,27 +1,21 @@
-# name: SonarBuild
-# on: [push]
+name: SonarBuild
+on: [push]
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     name: .NET 5 Application
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: Setup dotnet
-#         uses: actions/setup-dotnet@v1
-#         with:
-#           dotnet-version: '5.0.101' # Check for latest at link at .NET 5 download page
-#       - run: dotnet build
-#       - run: dotnet test
-name: Build
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [opened, synchronize, reopened]
 jobs:
   build:
+    runs-on: ubuntu-latest
+    name: .NET 5 Application
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.0.101' # Check for latest at link at .NET 5 download page
+      - run: dotnet build
+      - run: dotnet test
+      
+      
+  Sonarcloud:
     name: Build
     runs-on: windows-latest
     steps:
@@ -61,3 +55,5 @@ jobs:
            dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
      
+ 
+
