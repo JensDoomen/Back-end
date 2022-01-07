@@ -41,7 +41,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          file: ./Back-end/Authentication/Dockerfile
+          file: /Authentication/Dockerfile
           push: true
           tags: jensdoomen/nietdiscord:latest
 
