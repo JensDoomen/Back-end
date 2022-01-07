@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'Back-end/Authentication'
+        working-directory: 'Authentication'
     name: .NET 5 Application
     steps:
       - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'Back-end/Authentication'
+        working-directory: 'Authentication'
     steps:
       -
         name: Set up QEMU
