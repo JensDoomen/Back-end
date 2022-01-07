@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'Back-end'
+        working-directory: 'Back-end/Authentication'
     name: .NET 5 Application
     steps:
       - uses: actions/checkout@v2
