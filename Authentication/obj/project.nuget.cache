@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uQ6b3kJho/KwMfIy58jllsiGYGRpEBecns2mxuKsdmMWNO53xDAGj0MAgshEVaVMe1NURQZ4Sfs4ROc5FQV0Aw==",
+  "dgSpecHash": "U9QAEeF0b2nL0qA6NysIGPrDRJHgm60Wk6/hyGTCQhYfvLBOpVgTKeIwoz0gSCnnf/0/2ndDOj4C3a/+s1pNOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\Authentication\\Authentication.csproj",
+  "projectFilePath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\Authentication\\Authentication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gebruiker\\.nuget\\packages\\flurl\\3.0.2\\flurl.3.0.2.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\flurl.http\\3.2.0\\flurl.http.3.2.0.nupkg.sha512",

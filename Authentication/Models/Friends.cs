@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NietDiscord.Models
+namespace Authentication.Models
 {
     public class Friends
     {
@@ -12,20 +12,17 @@ namespace NietDiscord.Models
         [Required]
         public string friendname { get; set; }
 
-        public Friends()
-        {
-            this.Users = new HashSet<User>();
-        }
-        public virtual ICollection<User> Users { get; set; }
-
-        /*[ForeignKey]
-        public List<>*/
-        
+        [Required]
+        public int userId { get; set; }
+        [ForeignKey("userId")]
+        public User User { get; set; }
 
 
-       /* [Required]
-        public string friendname { get; set; }*/
-      
-        
+
+        /* public Friends()
+         {
+             this.Users = new HashSet<User>();
+         }
+         public virtual ICollection<User> Users { get; set; }*/
     }
 }

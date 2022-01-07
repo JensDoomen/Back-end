@@ -6214,11 +6214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\NietDiscord\\NietDiscord.csproj",
+      "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\NietDiscord\\NietDiscord.csproj",
       "projectName": "NietDiscord",
-      "projectPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\NietDiscord\\NietDiscord.csproj",
+      "projectPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\NietDiscord\\NietDiscord.csproj",
       "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\NietDiscord\\obj\\",
+      "outputPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\NietDiscord\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6239,8 +6239,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\Authentication\\Authentication.csproj": {
-              "projectPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\Authentication\\Authentication.csproj"
+            "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\Authentication\\Authentication.csproj": {
+              "projectPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\Authentication\\Authentication.csproj"
             }
           }
         }

@@ -18,11 +18,11 @@ namespace Authentication.Controllers
         private const string SECRET_KEY = "this is my custom Secret key for authnetication";
         public static readonly SymmetricSecurityKey SIGNING_KEY = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(TokenController.SECRET_KEY));
 
-        public object CreateToken(string username)
+        public object CreateToken(int userId)
         {
-            if (username != null)
+            if (userId!= 0)
             {
-                return new ObjectResult(GenerateToken(username));
+                return new ObjectResult(GenerateToken(userId));
             }
             else
             {
@@ -30,26 +30,28 @@ namespace Authentication.Controllers
             }
         }
 
-        private object GenerateToken(string email)
+        private object GenerateToken(int id)
         {
             var token = new JwtSecurityToken(
                 claims: new Claim[]
                 {
-                    new Claim("email", email)
+                    new Claim("userId", Convert.ToString(id))
+
                 },
                 notBefore: DateTime.Now,
                 expires: DateTime.Now.AddMinutes(60),
                 signingCredentials: new SigningCredentials(SIGNING_KEY, SecurityAlgorithms.HmacSha256)
-                );
+                ) ;
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
         public List<Claim> readOut(string test)
         {
+            string[] tokentemp = test.Split(" ");
             List<Claim> data = new List<Claim>();
 
-            var token = test;
+            var token = tokentemp[1];
             var handler = new JwtSecurityTokenHandler();
             var jwtSecurityToken = handler.ReadJwtToken(token);
 
@@ -60,7 +62,7 @@ namespace Authentication.Controllers
             return data;
         }
 
-        public string isExpired(string test)
+        /*public string isExpired(string test)
         {
             //string[] split = test.Split(" ");
 
@@ -92,11 +94,11 @@ namespace Authentication.Controllers
                 string jsonToken = newToken.ToString();
                 return jsonToken;
             }
-        }
+        }*/
 
-        public string nonExistentToken(string email)
+        public string nonExistentToken(int userId)
         {
-            var x = GenerateToken(email);
+            var x = GenerateToken(userId);
             return x.ToString();
         }
     }

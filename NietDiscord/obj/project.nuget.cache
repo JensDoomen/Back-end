@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4a40sjfSrsNw6pwmmBD8y6CUTZTafR5JrkHPl1Glu3cbKmIONC+PxlmNAblHWWAUwX9QBiexfZW8K24TNuO4lQ==",
+  "dgSpecHash": "mlD74lXI5ZATmFzsruA/Qccv0+o3napbikJI2U1xGZJjrYABl5Fyf9cAQW0PvUsZYfs/ThHMSRQv2WHUDE9pTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\NietDiscord\\NietDiscord.csproj",
+  "projectFilePath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\NietDiscord\\NietDiscord.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gebruiker\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\flurl\\3.0.2\\flurl.3.0.2.nupkg.sha512",

@@ -5752,11 +5752,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\Authentication\\Authentication.csproj",
+      "projectUniqueName": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\Authentication\\Authentication.csproj",
       "projectName": "Authentication",
-      "projectPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\Authentication\\Authentication.csproj",
+      "projectPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\Authentication\\Authentication.csproj",
       "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\Authentication\\obj\\",
+      "outputPath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\Authentication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

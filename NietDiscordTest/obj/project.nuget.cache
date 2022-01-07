@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GkR0A4Nr+kcUYnYJe6cMXO0KoC8UCrzc3nOfygzT+1uxg6ngE83yyrv8uVkV8DV8jFYLo7WNVch9VycGPWZ0jQ==",
+  "dgSpecHash": "havrZc92wXRGcpe9MR1ktJ30kbbpsnxO9iIFi5YWlsWJsW7MZzCq2Q6y0ur4AsrLTERELXFNjh+UjE68zT9slg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\GitHub\\NietDiscord-GH\\NietDiscord\\NietDiscordTest\\NietDiscordTest.csproj",
+  "projectFilePath": "C:\\Users\\Gebruiker\\Documents\\FHICT\\Semester 3\\Individueel project\\TestSonar\\NietDiscordTest\\NietDiscordTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gebruiker\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
