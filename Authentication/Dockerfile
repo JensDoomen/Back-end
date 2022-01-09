@@ -29,7 +29,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Authentication.dll"]
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
+
