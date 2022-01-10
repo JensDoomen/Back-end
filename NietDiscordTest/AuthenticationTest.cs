@@ -127,6 +127,32 @@ namespace NietDiscordTest
             Assert.IsType<string>(result);
         }
 
+        [Fact]
+        private void UpdateAccount_shouldupdatedata()
+        {
+            
+            var controller = Initialize();
+            var usermodel = new User();
+            usermodel.name = "piet";
+            usermodel.email = "piet@mail.nl";
+            usermodel.password = "SpaRood23";
+            var test = controller.loginNoToken(1);
+            var result = controller.updateAccount(test, usermodel);
+            Assert.IsType<User>(result);
+        }
+
+        [Fact]
+        private void DeleteUserbyId_shoulddeleteuser()
+        {
+
+            var controller = Initialize();
+            var usermodel = new User();
+            var test = controller.loginNoToken(1);
+            var result = controller.DeleteUserbyID(test);
+            Assert.IsType<User>(result);
+        }
+
+
 
     }
 }

@@ -33,6 +33,10 @@ namespace Authentication.Controllers
                         select User).FirstOrDefault();
 
             string json = JsonConvert.SerializeObject(user);
+            if (json == "null")
+            {
+                return "400";
+            }
 
             if (json == "[]")
             {
@@ -46,10 +50,10 @@ namespace Authentication.Controllers
                 {
                     validToken = loginNoToken(user.userId);
                 }
-                /* else
-                 {
-                     validToken = TC.isExpired(Authorization);
-                 }*/
+                else
+                {
+                    validToken = TC.isExpired(Authorization);
+                }
                 return validToken;
             }
         }

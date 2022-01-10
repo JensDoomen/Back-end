@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Flurl.Http;
 using Newtonsoft.Json;
+using Authentication.Controllers;
 
 namespace Authentication.Controllers
 {
@@ -62,7 +63,7 @@ namespace Authentication.Controllers
             return data;
         }
 
-        /*public string isExpired(string test)
+        public string isExpired(string test)
         {
             //string[] split = test.Split(" ");
 
@@ -79,22 +80,23 @@ namespace Authentication.Controllers
             else
             {
                 //is expired
+                string userId = "";
                 List<string> temp = new List<string>();
                 User u = new User();
 
                 foreach (Claim c in jwtSecurityToken.Claims)
                 {
-                    if (c.Type == "email")
+                    if (c.Type == "userId")
                     {
-                        u.email = c.Value;
+                        userId = c.Value;
                     }
                 }
                 //Newly generated token when old token was expired
-                object newToken = GenerateToken(u.email);
+                object newToken = GenerateToken(Convert.ToInt32(userId));
                 string jsonToken = newToken.ToString();
                 return jsonToken;
             }
-        }*/
+        }
 
         public string nonExistentToken(int userId)
         {
