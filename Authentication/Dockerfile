@@ -11,7 +11,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 44347
 EXPOSE 5000
-ENV ASPNETCORE_URLS http://*:44347
+
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["Authentication/Authentication.csproj", "Authentication/"]
