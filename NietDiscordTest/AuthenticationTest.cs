@@ -138,7 +138,7 @@ namespace NietDiscordTest
             usermodel.password = "SpaRood23";
             var test = controller.loginNoToken(1);
             var result = controller.updateAccount(test, usermodel);
-            Assert.IsType<User>(result);
+            Assert.IsType<string>(result);
         }
 
         [Fact]
@@ -149,7 +149,7 @@ namespace NietDiscordTest
             var usermodel = new User();
             var test = controller.loginNoToken(1);
             var result = controller.DeleteUserbyID(test);
-            Assert.IsType<User>(result);
+            Assert.IsType<string>(result);
         }
 
 
